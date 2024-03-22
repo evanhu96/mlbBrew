@@ -9,8 +9,17 @@ const gameRefSchema = new Schema({
     type: String,
     required: true,
   },
-  id: {
+  gameId: {
     type: String,
+    required: true,
+    unique: true,
+  },
+  date: {
+    type: String,
+    required: true,
+  },
+  epoch: {
+    type: Number,
     required: true,
   },
 });
